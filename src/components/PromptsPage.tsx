@@ -31,7 +31,7 @@ export function PromptsPage() {
         }
         const debounceFetch = setTimeout(() => {
             fetchPrompts();
-        }, 500); // 500ms debounce time
+        }, 1000); // 500ms debounce time
         return () => clearTimeout(debounceFetch);
     }, [page, searchQuery]);
 
