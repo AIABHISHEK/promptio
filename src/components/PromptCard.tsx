@@ -72,6 +72,7 @@ export function PromptCard({ prompt, isExpanded = false, onToggleExpand }: Promp
       }
       setIsBookmarked(!isBookmarked);
     } catch (error) {
+      console.log(error)
       toast.error('Something went wrong');
     }
   };
